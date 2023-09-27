@@ -1,0 +1,20 @@
+.closeBtn {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+
+  svg {
+    position: fixed;
+    fill: #555555;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .closeBtn {
+    svg {
+      width: 15px;
+    }
+  }
+}

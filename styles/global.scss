@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #333333;
+}
+
+#__next {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav,
+footer {
+  flex: 0 0 30px;
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  color: #444444;
+
+  .articlOrder {
+    margin-left: -4px;
+  }
+}
+
+@media screen {
+  nav {
+    @media  (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+}
+
+
+footer {
+  justify-content: center;
+  font-size: 14px;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 825px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.1s ease;
+
+  &.active,
+  &:hover {
+    color: #e700ff;
+  }
+}
+
+
+.scrollUpBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  fill: #555555;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.hiddenScrollUpBtn {
+  visibility: hidden;
+}
+
+
+.dimmed-outside-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 480px) {
+  .scrollUpBtn{
+     width: 35px;
+    } 
+}

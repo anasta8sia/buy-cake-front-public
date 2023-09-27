@@ -1,0 +1,25 @@
+.order {
+  font-size: 24px;
+  font-weight: 500;
+  color: #555555;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.userData {
+  color: #e700ff;
+}
+
+.errorOrder {
+  margin-top: 75px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #e700ff;
+}
+
+@media screen and (max-width: 480px) {
+  .order .errorOrder {
+    font-size: 16px;
+  }
+}
